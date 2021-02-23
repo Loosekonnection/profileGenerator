@@ -1,2 +1,0 @@
-# profileGenerator
-Team Profile Generator
