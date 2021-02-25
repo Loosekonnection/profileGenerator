@@ -23,10 +23,11 @@ body {
 /* Card Body Text Bold */
 .card-body {
     font-weight: 500;
+    width: 350px;
 }
 
 /* Font Awesome Style */
 .fas {
-    color: #fff;
+    color: rgb(250, 255, 0);
 }
 
