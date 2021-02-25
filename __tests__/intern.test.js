@@ -5,7 +5,7 @@ const Intern = require('../lib/intern');
 describe('Intern', () => {
     it('Should set school using constructor', () => {
         const testSchool = 'University of Birmingham';
-        const intern = new Intern('School', 1, 'email@test.co.uk', testSchool);
+        const intern = new Intern('School', 1, 'test@email.co.uk', testSchool);
         expect(intern.school).toBe(testSchool);
     });
 });
@@ -14,7 +14,7 @@ describe('Intern', () => {
 describe('getRole', () => {
     it('Should return \"Intern\" using getRole()', () => {
         const testRole = 'Intern';
-        const intern = new Intern('Role', 1, 'email@test.co.uk', 'University of Birmingham');
+        const intern = new Intern('Role', 1, 'test@email.co.uk', 'University of Birmingham');
         expect(intern.getRole()).toBe(testRole);
     });
 });
@@ -23,7 +23,7 @@ describe('getRole', () => {
 describe('getSchool', () => {
     it('Should get school using getSchool()', () => {
         const testSchool = 'University of Birmingham';
-        const intern = new Intern('School', 1, 'email@test.co.uk', testSchool);
+        const intern = new Intern('School', 1, 'test@email.co.uk', testSchool);
         expect(intern.getSchool()).toBe(testSchool);
     });
 });

@@ -5,7 +5,7 @@ const Manager = require('../lib/manager');
 describe('Manager', () => {
     it('Should set the office number using constructor', () => {
         const testOffice = 10;
-        const manager = new Manager('Manager', 1, 'email@test.co.uk', testOffice);
+        const manager = new Manager('Manager', 1, 'test@email.co.uk', testOffice);
         expect(manager.officeNumber).toBe(testOffice);
     });
 });
@@ -14,7 +14,7 @@ describe('Manager', () => {
 describe('getRole', () => {
     it('Should return \"Manager\" using getRole()', () => {
         const testRole = 'Manager';
-        const manager = new Manager('Role', 1, 'email@test.co.uk', 10);
+        const manager = new Manager('Role', 1, 'test@email.co.uk', 10);
         expect(manager.getRole()).toBe(testRole);
     });
 });
@@ -23,7 +23,7 @@ describe('getRole', () => {
 describe('getOfficeNumber', () => {
     it('Should get the office number using getOfficeNumber()', () => {
         const testOfficeNo = 10;
-        const manager = new Manager('Office', 1, 'email@test.co.uk', testOfficeNo);
+        const manager = new Manager('Office', 1, 'test@email.co.uk', testOfficeNo);
         expect(manager.getOfficeNumber()).toBe(testOfficeNo);
     });
 });

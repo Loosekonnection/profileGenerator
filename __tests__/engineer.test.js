@@ -5,7 +5,7 @@ const Engineer = require('../lib/engineer');
 describe('Engineer', () => {
     it('Should set GitHUb account using constructor', () => {
         const testGitHub = 'GitHub';
-        const engineer = new Engineer('Engineer', 1, 'email@test.co.uk', testGitHub);
+        const engineer = new Engineer('Engineer', 1, 'test@email.co.uk', testGitHub);
         expect(engineer.github).toBe(testGitHub);
     });
 });
@@ -14,7 +14,7 @@ describe('Engineer', () => {
 describe('getRole', () => {
     it('Should return \'Engineer\' using getRole()', () => {
         const testRole = 'Engineer';
-        const engineer = new Engineer('Role', 1, 'email@test.co.uk', 'GitHubUser');
+        const engineer = new Engineer('Role', 1, 'test@email.co.uk', 'GitHubUser');
         expect(engineer.getRole()).toBe(testRole);
     });
 });
@@ -23,7 +23,7 @@ describe('getRole', () => {
 describe('getGithub', () => {
     it('Should get GitHub username using getGithub()', () => {
         const testVal = 'GitHubUser';
-        const engineer = new Engineer('GitHub', 1, 'email@test.co.uk', testVal);
+        const engineer = new Engineer('GitHub', 1, 'test@email.co.uk', testVal);
         expect(engineer.getGithub()).toBe(testVal);
     });
 });

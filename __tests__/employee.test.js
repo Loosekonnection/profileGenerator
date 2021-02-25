@@ -20,7 +20,7 @@ describe('Employee', () => {
     });
 
     it('Should set the email address using the constructor argument', () => {
-        const testEmail = 'email@test.co.uk';
+        const testEmail = 'test@email.co.uk';
         const employee = new Employee('email', 1, testEmail);
         expect(employee.email).toBe(testEmail);
     });
@@ -47,7 +47,7 @@ describe('getId', () => {
 // getEmail() method Jest test
 describe('getEmail', () => {
     it('Should get email from getEmail()', () => {
-        const testEmail = 'email@test.co.uk';
+        const testEmail = 'test@email.co.uk';
         const employee = new Employee('email', 1, testEmail);
         expect(employee.getEmail()).toBe(testEmail);
     });
@@ -57,7 +57,7 @@ describe('getEmail', () => {
 describe('getRole', () => {
     it('getRole() should return \"Employee\"', () => {
         const testRole = 'Employee';
-        const employee = new Employee('Role', 1, 'email@test.co.uk');
+        const employee = new Employee('Role', 1, 'test@email.co.uk');
         expect(employee.getRole()).toBe(testRole);
     });
 });
