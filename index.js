@@ -201,20 +201,18 @@ function htmlCards(member) {
             const github = member.getGithub();
             data = `
             <!-- Engineer Employee Card -->
-            <div class="row">
-                <div class="col d-sm-flex justify-content-center">
-                    <div class="card employee-card mt-4">
-                        <div class="card-header">
-                            <h2 class="card-title">${name}</h2>
-                            <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">ID: ${id}</li>
-                                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
-                                <li class="list-group-item">GitHub: <a href="https://github.com/${github}" target="_blank">${github}</a></li>
-                            </ul>
-                        </div>
+            <div class="col d-sm-flex justify-content-center">
+                <div class="card employee-card mt-4">
+                    <div class="card-header">
+                        <h2 class="card-title">${name}</h2>
+                        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">ID: ${id}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
+                            <li class="list-group-item">GitHub: <a href="https://github.com/${github}" target="_blank">${github}</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -222,43 +220,39 @@ function htmlCards(member) {
         } else if (role === 'Intern') {
             const school = member.getSchool();
             data = `
-            <!-- Intern Employee Card -->
-            <div class="row">
-                <div class="col d-sm-flex justify-content-center">
-                    <div class="card employee-card mt-4">
-                        <div class="card-header">
-                            <h2 class="card-title">${name}</h2>
-                            <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">ID: ${id}</li>
-                                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
-                                <li class="list-group-item">School: ${school}</li>
-                            </ul>
-                        </div>
+            <!-- Intern Employee Card -->          
+            <div class="col d-sm-flex justify-content-center">
+                <div class="card employee-card mt-4">
+                    <div class="card-header">
+                        <h2 class="card-title">${name}</h2>
+                        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">ID: ${id}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
+                            <li class="list-group-item">School: ${school}</li>
+                        </ul>
                     </div>
                 </div>
-            </div>    
+            </div>              
             `;
         } else {
             const officeNumber = member.getOfficeNumber();
             data = `
             <!-- Manager Employee Card -->
-            <div class="row">
-                <div class="col d-sm-flex justify-content-center">
-                    <div class="card employee-card mt-4">
-                        <div class="card-header">
-                            <h2 class="card-title">${name}</h2>
-                            <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">ID: ${id}</li>
-                                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
-                                <li class="list-group-item">Office Number: ${officeNumber}</li>
-                            </ul>
-                        </div>
+            <div class="col d-sm-flex justify-content-center">
+                <div class="card employee-card mt-4">
+                    <div class="card-header">
+                        <h2 class="card-title">${name}</h2>
+                        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">ID: ${id}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
+                            <li class="list-group-item">Office Number: ${officeNumber}</li>
+                        </ul>
                     </div>
                 </div>
             </div>    
