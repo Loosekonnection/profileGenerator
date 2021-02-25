@@ -202,7 +202,7 @@ function htmlCards(member) {
             data = `
             <!-- Engineer Employee Card -->
             <div class="row">
-                <div class="col d-lg-flex justify-content-center">
+                <div class="col d-sm-flex justify-content-center">
                     <div class="card employee-card mt-4">
                         <div class="card-header">
                             <h2 class="card-title">${name}</h2>
@@ -224,7 +224,7 @@ function htmlCards(member) {
             data = `
             <!-- Intern Employee Card -->
             <div class="row">
-                <div class="col d-lg-flex justify-content-center">
+                <div class="col d-sm-flex justify-content-center">
                     <div class="card employee-card mt-4">
                         <div class="card-header">
                             <h2 class="card-title">${name}</h2>
@@ -246,7 +246,7 @@ function htmlCards(member) {
             data = `
             <!-- Manager Employee Card -->
             <div class="row">
-                <div class="col d-lg-flex justify-content-center">
+                <div class="col d-sm-flex justify-content-center">
                     <div class="card employee-card mt-4">
                         <div class="card-header">
                             <h2 class="card-title">${name}</h2>
@@ -299,7 +299,7 @@ function htmlFooter() {
             </div>
         </div>
     </footer>
-    
+
     <!-- Bootstrap jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
